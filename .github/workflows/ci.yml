@@ -14,7 +14,7 @@ jobs:
         with:
           path: ~\AppData\Local\npm-cache
           key: ${{runner.os}}-mykey-${{hashFiles('**/package-lock.json')}}
-          restore-key: |
+          restore-keys: |
             ${{runner.os}}-mykey-
       - name: use NodeJS
         uses: actions/setup-node@v3
